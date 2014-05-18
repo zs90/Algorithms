@@ -215,7 +215,6 @@ int _tmain(int argc, _TCHAR* argv[])
 	ShellSort(src, 10);
 	for(int i = 0; i < 10; ++i)
 		printf("%d ",src[i]);
-	system("pause");
     return 0;
 }
 
