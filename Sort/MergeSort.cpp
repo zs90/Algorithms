@@ -11,7 +11,7 @@ void Merge(int a[], int low, int mid, int high){
 	while(i <= mid) tmp[k++] = a[i++];
 	while(j <= high) tmp[k++] = a[j++];
 	
-	memcpy(a, tmp, sizeof(int) * (high - low + 1));
+	memcpy(a + low, tmp, sizeof(int) * (high - low + 1));
 	delete []tmp;
 }
 
